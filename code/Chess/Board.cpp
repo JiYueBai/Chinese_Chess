@@ -77,7 +77,7 @@ void Board::drawStone(QPainter& painter,int id)
         painter.setPen(Qt::red);
     painter.setFont(QFont("SimHei",_r,700));
 
-    painter.drawText(rect,stone[id].getText(),QTextOption(Qt::AlignCenter));
+    painter.drawText(rect,stone[id].name(),QTextOption(Qt::AlignCenter));
 }
 //效率低
 bool Board::getRowCol(QPoint pt, int &row, int &col)

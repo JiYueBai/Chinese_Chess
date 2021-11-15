@@ -1,7 +1,6 @@
 ﻿#ifndef BOARD_H
 #define BOARD_H
 
-
 #include <QWidget>
 #include "Stone.h"
 #include "Step.h"
@@ -11,7 +10,7 @@ class Board : public QWidget
     Q_OBJECT
 public:
     explicit Board(QWidget *parent = nullptr);
-    //game datas
+    //游戏数据
     Stone stone[32];
     int _selectid;
     int _r;//棋子半径
